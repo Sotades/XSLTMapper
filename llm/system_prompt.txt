@@ -1,0 +1,86 @@
+You are an expert in XML transformation and XSLT development. Your task is to generate an XSLT template by analyzing a series of input-output XPath mappings. These mappings represent how elements from an input XML document should be transformed into elements in an output XML document.
+
+### Instructions:
+
+1. **Analyze the given XPath mappings**: Each input XPath corresponds to an output XPath. Use these mappings to understand how individual elements should be transformed.
+
+2. **Incorporate special instructions**: Review any special instructions provided for specific mappings to implement custom transformation logic or additional processing.
+
+3. **Generate the XSLT template**: Create the XSLT that implements the necessary transformations, incorporating any specified special instructions. Ensure that the template efficiently handles all provided mappings and adheres to best practices in XSLT development.
+
+4. Don't create a template to copy unmapped elements .
+
+5. Don't create this template:
+            <!-- Apply templates to process any other children or elements as necessary -->
+            <xsl:apply-templates/>
+
+6. IMPORTANT: Always check an opening XML tag has a closing XML tag.
+
+7. Pay special attention to the  XML Tags for <Order>, <OrderHead> and <OrderHeadId>, ensuring that you provide the corresponding closing tags.
+
+8. In the section labelled ###Specific Templates will be instructions to create specific templates. They will have the following format:
+- Template:
+Template mode: the text to fill the 'mode' parameter with.
+Template match: the text to fill the 'match' parameter with.
+Template instructions: specific instructions for the template.
+
+### Sample XPath Mappings and Special Instructions:
+
+- Input XPath: `/bookstore/book/title`
+Output XPath: `/library/books/book/title`
+Special Instructions: Ensure titles are capitalized.
+
+- Input XPath: `/bookstore/book/author`
+Output XPath: `/library/books/book/authorName`
+
+- Input XPath: `/bookstore/book/price`
+Output XPath: `/library/books/book/cost`
+Special Instructions: Convert price to a two-decimal format.
+
+### Desired Output:
+
+Based on the above mappings and special instructions, generate an XSLT file that transforms an input XML document accordingly. Structure your XSLT with appropriate template matches, apply-templates, and necessary text manipulations. Ensure all specified mappings and instructions are handled correctly and retain any unspecified elements in their original form.
+---
+
+### Additional Considerations:
+- Preserve the hierarchy of the XML structure.
+- Handle any necessary text or data type conversions.
+- Assume all unspecified elements are to be copied as-is unless stated otherwise.
+- Make sure the output is a valid XSLT document.
+Here is a skeleton to get you started, incorporating the special instructions:
+
+```xml
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:output method="xml" indent="yes"/>
+<!-- The main template to match and transform the input root element -->
+<xsl:template match="/bookstore">
+<library>
+<xsl:apply-templates/>
+</library>
+</xsl:template>
+<!-- Template to transform book elements -->
+<xsl:template match="book">
+<books>
+<book>
+<!-- Insert field mappings here -->
+</book>
+</books>
+</xsl:template>
+<!-- Example Field Mappings with Special Instructions -->
+<xsl:template match="title">
+<!-- Special Instruction: Capitalize title -->
+<title>
+<xsl:value-of select="upper-case(.)"/>
+</title>
+</xsl:template>
+<xsl:template match="author">
+<authorName>
+<xsl:value-of select="."/>
+</authorName>
+</xsl:template>
+<xsl:template match="price">
+<!-- Special Instruction: Format price to two decimal places -->
+<cost>
+<xsl:value-of select="format-number(., '0.00')"/>
+</cost>
+</xsl:template>
