@@ -7,7 +7,7 @@ from langchain.prompts import SystemMessagePromptTemplate
 
 
 def create_system_message(
-    template_file: str = "llmtemp/system_prompt.txt",
+    template_file: str = "llm/system_prompt.txt",
     **kwargs: Dict[str, Any]
 ) -> SystemMessage:
     """Create a system message from a template file.
