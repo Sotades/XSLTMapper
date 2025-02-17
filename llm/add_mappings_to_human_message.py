@@ -42,10 +42,7 @@ def add_mappings_to_human_message(excel_sheet: str, human_message: HumanMessage)
     missing_columns = [col for col in required_columns if col not in mappings[0]]
     if missing_columns:
         raise ValueError(f"Excel file missing required columns: {', '.join(missing_columns)}")
-    
-    # Create a HumanMessage object
-    human_message = HumanMessage(content="")
-    
+
     # Set template variables for each row
     for mapping in mappings:
         mapping['input_xpath'] = mapping.pop('Input XPath')
