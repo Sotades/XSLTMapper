@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ZTELINVOIC02>
+    <IDOC BEGIN="1">
+        <EDI_DC40 SEGMENT="1">
+            <TABNAM>EDI_DC40</TABNAM>
+            <MANDT>210</MANDT>
+            <DOCNUM>0000000000007176</DOCNUM>
+            <DOCREL>700</DOCREL>
+            <STATUS>30</STATUS>
+            <DIRECT>1</DIRECT>
+            <OUTMOD>2</OUTMOD>
+            <IDOCTYP>INVOIC02</IDOCTYP>
+            <CIMTYP>ZTELINVOIC02</CIMTYP>
+            <MESTYP>ZTELINVOIC</MESTYP>
+            <SNDPOR>SAPEQ1</SNDPOR>
+            <SNDPRT>LS</SNDPRT>
+            <SNDPRN>EQ1CLNT210</SNDPRN>
+            <RCVPOR>XQ1_100</RCVPOR>
+            <RCVPRT>KU</RCVPRT>
+            <RCVPFC>RE</RCVPFC>
+            <RCVPRN>0001004290</RCVPRN>
+            <CREDAT>20080104</CREDAT>
+            <CRETIM>113116</CRETIM>
+            <SERIAL>20080104113113</SERIAL>
+        </EDI_DC40>
+        <E1EDK01 SEGMENT="1">
+            <CURCY>EEK</CURCY>
+            <HWAER>EUR</HWAER>
+            <WKURS>0.06391</WKURS>
+            <ZTERM>0300</ZTERM>
+            <KUNDEUINR>EE100702800</KUNDEUINR>
+            <EIGENUINR>EE100436341</EIGENUINR>
+            <BSART>INVO</BSART>
+            <BELNR>200000012</BELNR>
+            <NTGEW>10.398</NTGEW>
+            <BRGEW>12.630</BRGEW>
+            <GEWEI>KGM</GEWEI>
+            <FKART_RL>ZLR</FKART_RL>
+            <RECIPNT_NO>0001000225</RECIPNT_NO>
+            <FKTYP>L</FKTYP>
+            <WKURS_M>15.64660</WKURS_M>
+        </E1EDK01>
+        <E1EDKA1 SEGMENT="1">
+            <PARVW>RS</PARVW>
+            <LIFNR>1000225</LIFNR>
+            <NAME1>Altia Eesti AS</NAME1>
+            <STRAS>Tammi tee 30 Laabi küla Harku vald</STRAS>
+            <ORT01>Tabasalu sjsk</ORT01>
+            <PSTLZ>76901</PSTLZ>
+            <LAND1>EE</LAND1>
+            <TELF1>372 6712 100</TELF1>
+            <TELFX>372 6712 001</TELFX>
+            <SPRAS>E</SPRAS>
+            <BNAME>NAKSEI</BNAME>
+            <PAORG>E110</PAORG>
+        </E1EDKA1>
+        <E1EDKA1 SEGMENT="1">
+            <PARVW>AG</PARVW>
+            <PARTN>1000225</PARTN>
+            <NAME1>MAXIMA Eesti OÜ</NAME1>
+            <STRAS>PETERBURI TEE 47</STRAS>
+            <ORT01>TALLINN</ORT01>
+            <PSTLZ>11415</PSTLZ>
+            <LAND1>EE</LAND1>
+            <TELF1>44-202086063718</TELF1>
+            <TELFX>44-299276230677</TELFX>
+            <SPRAS>9</SPRAS>
+            <SPRAS_ISO>ET</SPRAS_ISO>
+        </E1EDKA1>
+        <E1EDKA1 SEGMENT="1">
+            <PARVW>RE</PARVW>
+            <PARTN>1000225</PARTN>
+            <NAME1>MAXIMA Eesti OÜ</NAME1>
+            <STRAS>PETERBURI TEE 47</STRAS>
+            <ORT01>TALLINN</ORT01>
+            <PSTLZ>11415</PSTLZ>
+            <LAND1>EE</LAND1>
+            <TELF1>44-202086063718</TELF1>
+            <TELFX>44-299276230677</TELFX>
+            <SPRAS>9</SPRAS>
+            <SPRAS_ISO>ET</SPRAS_ISO>
+        </E1EDKA1>
+        <E1EDKA1 SEGMENT="1">
+            <PARVW>RG</PARVW>
+            <PARTN>1000225</PARTN>
+            <NAME1>MAXIMA Eesti OÜ</NAME1>
+            <STRAS>PETERBURI TEE 47</STRAS>
+            <ORT01>TALLINN</ORT01>
+            <PSTLZ>11415</PSTLZ>
+            <LAND1>EE</LAND1>
+            <TELF1>44-202086063718</TELF1>
+            <TELFX>44-299276230677</TELFX>
+            <SPRAS>9</SPRAS>
+            <SPRAS_ISO>ET</SPRAS_ISO>
+        </E1EDKA1>
+        <E1EDKA1 SEGMENT="1">
+            <PARVW>BK</PARVW>
+            <LIFNR>EE11</LIFNR>
+            <NAME1>Altia Eesti AS</NAME1>
+            <STRAS>Tammi tee 30 Laabi küla</STRAS>
+            <ORT01>Harjumaa</ORT01>
+            <PSTLZ>76901</PSTLZ>
+            <LAND1>EE</LAND1>
+        </E1EDKA1>
+        <E1EDK02 SEGMENT="1">
+            <QUALF>009</QUALF>
+            <BELNR>0200000012</BELNR>
+            <DATUM>20080102</DATUM>
+        </E1EDK02>
+        <E1EDK02 SEGMENT="1">
+            <QUALF>002</QUALF>
+            <BELNR>0000000191</BELNR>
+            <DATUM>20071228</DATUM>
+        </E1EDK02>
+        <E1EDK02 SEGMENT="1">
+            <QUALF>012</QUALF>
+            <BELNR>0080000118</BELNR>
+            <DATUM>20080102</DATUM>
+        </E1EDK02>
+        <E1EDK02 SEGMENT="1">
+            <QUALF>017</QUALF>
+            <BELNR>0200000012</BELNR>
+        </E1EDK02>
+        <E1EDK03 SEGMENT="1">
+            <IDDAT>026</IDDAT>
+            <DATUM>20080102</DATUM>
+        </E1EDK03>
+        <E1EDK03 SEGMENT="1">
+            <IDDAT>001</IDDAT>
+            <DATUM>20080102</DATUM>
+        </E1EDK03>
+        <E1EDK03 SEGMENT="1">
+            <IDDAT>012</IDDAT>
+            <DATUM>20071228</DATUM>
+        </E1EDK03>
+        <E1EDK03 SEGMENT="1">
+            <IDDAT>011</IDDAT>
+            <DATUM>20080104</DATUM>
+        </E1EDK03>
+        <E1EDK03 SEGMENT="1">
+            <IDDAT>024</IDDAT>
+            <DATUM>20080102</DATUM>
+        </E1EDK03>
+        <E1EDK03 SEGMENT="1">
+            <IDDAT>028</IDDAT>
+            <DATUM>20080201</DATUM>
+        </E1EDK03>
+        <E1EDK04 SEGMENT="1">
+            <MWSKZ>V1</MWSKZ>
+            <MSATZ>18.000</MSATZ>
+            <MWSBT>108.60</MWSBT>
+        </E1EDK04>
+        <E1EDK04 SEGMENT="1">
+            <MWSKZ>V0</MWSKZ>
+            <MSATZ>0</MSATZ>
+            <MWSBT>0</MWSBT>
+        </E1EDK04>
+        <E1EDK17 SEGMENT="1">
+            <QUALF>001</QUALF>
+            <LKOND>DDU</LKOND>
+        </E1EDK17>
+        <E1EDK17 SEGMENT="1">
+            <QUALF>002</QUALF>
+            <LKOND>DDU</LKOND>
+            <LKTEXT>TALLINN</LKTEXT>
+        </E1EDK17>
+        <E1EDK18 SEGMENT="1">
+            <QUALF>001</QUALF>
+            <TAGE>30</TAGE>
+            <PRZNT>0</PRZNT>
+            <ZTERM_TXT>Bis zum 01.02.2008 ohne Abzug</ZTERM_TXT>
+        </E1EDK18>
+        <E1EDK28 SEGMENT="1">
+            <BCOUN>EE</BCOUN>
+            <BRNUM>401</BRNUM>
+            <BNAME>SEB Eesti Ühispank</BNAME>
+            <BALOC>Tallinn</BALOC>
+            <ACNUM>10220018244013</ACNUM>
+            <ACNAM>Altia Eesti AS</ACNAM>
+        </E1EDK28>
+        <E1EDK28 SEGMENT="1">
+            <BCOUN>EE</BCOUN>
+            <BRNUM>767</BRNUM>
+            <BNAME>Hansapank</BNAME>
+            <BALOC>Tallinn</BALOC>
+            <ACNUM>221010113478</ACNUM>
+            <ACNAM>Altia Eesti AS</ACNAM>
+        </E1EDK28>
+        <E1EDK14 SEGMENT="1">
+            <QUALF>008</QUALF>
+            <ORGID>E110</ORGID>
+        </E1EDK14>
+        <E1EDK14 SEGMENT="1">
+            <QUALF>007</QUALF>
+            <ORGID>01</ORGID>
+        </E1EDK14>
+        <E1EDK14 SEGMENT="1">
+            <QUALF>006</QUALF>
+            <ORGID>00</ORGID>
+        </E1EDK14>
+        <E1EDK14 SEGMENT="1">
+            <QUALF>015</QUALF>
+            <ORGID>ZF2</ORGID>
+        </E1EDK14>
+        <E1EDK14 SEGMENT="1">
+            <QUALF>003</QUALF>
+            <ORGID>EE11</ORGID>
+        </E1EDK14>
+        <E1EDP01 SEGMENT="1">
+            <POSEX>000010</POSEX>
+            <MENGE>3.000</MENGE>
+            <MENEE>PCE</MENEE>
+            <NTGEW>2.310</NTGEW>
+            <GEWEI>KGM</GEWEI>
+            <BRGEW>3.990</BRGEW>
+            <PSTYV>TAN</PSTYV>
+            <WERKS>EP01</WERKS>
+            <E1EDP02 SEGMENT="1">
+                <QUALF>001</QUALF>
+            </E1EDP02>
+            <E1EDP02 SEGMENT="1">
+                <QUALF>002</QUALF>
+                <BELNR>0000000191</BELNR>
+                <ZEILE>000010</ZEILE>
+                <DATUM>20071228</DATUM>
+            </E1EDP02>
+            <E1EDP02 SEGMENT="1">
+                <QUALF>016</QUALF>
+                <BELNR>0080000118</BELNR>
+                <ZEILE>000010</ZEILE>
+                <DATUM>20080102</DATUM>
+            </E1EDP02>
+            <E1EDP03 SEGMENT="1">
+                <IDDAT>029</IDDAT>
+                <DATUM>20071228</DATUM>
+            </E1EDP03>
+            <E1EDP03 SEGMENT="1">
+                <IDDAT>001</IDDAT>
+                <DATUM>20080102</DATUM>
+            </E1EDP03>
+            <E1EDP03 SEGMENT="1">
+                <IDDAT>011</IDDAT>
+                <DATUM>20080104</DATUM>
+            </E1EDP03>
+            <E1EDP03 SEGMENT="1">
+                <IDDAT>025</IDDAT>
+                <DATUM>20071228</DATUM>
+            </E1EDP03>
+            <E1EDP03 SEGMENT="1">
+                <IDDAT>027</IDDAT>
+                <DATUM>20080102</DATUM>
+            </E1EDP03>
+            <E1EDP03 SEGMENT="1">
+                <IDDAT>023</IDDAT>
+                <DATUM>20080102</DATUM>
+            </E1EDP03>
+            <E1EDP19 SEGMENT="1">
+                <QUALF>010</QUALF>
+                <IDTNR>LN115E</IDTNR>
+            </E1EDP19>
+            <E1EDP19 SEGMENT="1">
+                <QUALF>002</QUALF>
+                <IDTNR>1001727</IDTNR>
+                <KTEXT>NEDERBURG SAUV.BL 75CL</KTEXT>
+            </E1EDP19>
+            <E1EDP19 SEGMENT="1">
+                <QUALF>003</QUALF>
+                <IDTNR>6001452258005</IDTNR>
+            </E1EDP19>
+            <E1EDP26 SEGMENT="1">
+                <QUALF>004</QUALF>
+                <BETRG>230.77</BETRG>
+            </E1EDP26>
+            <E1EDP26 SEGMENT="1">
+                <QUALF>003</QUALF>
+                <BETRG>195.57</BETRG>
+            </E1EDP26>
+            <E1EDP26 SEGMENT="1">
+                <QUALF>010</QUALF>
+                <BETRG>182.46</BETRG>
+            </E1EDP26>
+            <E1EDP26 SEGMENT="1">
+                <QUALF>011</QUALF>
+                <BETRG>205.86</BETRG>
+            </E1EDP26>
+            <E1EDP26 SEGMENT="1">
+                <QUALF>012</QUALF>
+                <BETRG>195.57</BETRG>
+            </E1EDP26>
+            <E1EDP26 SEGMENT="1">
+                <QUALF>001</QUALF>
+                <BETRG>60.82</BETRG>
+            </E1EDP26>
+            <E1EDP26 SEGMENT="1">
+                <QUALF>002</QUALF>
+                <BETRG>182.46</BETRG>
+            </E1EDP26>
+            <E1EDPA1 SEGMENT="1">
+                <PARVW>WE</PARVW>
+                <PARTN>6000473</PARTN>
+                <NAME1>Maxima X kauplus T216</NAME1>
+                <STRAS>E.VILDE TEE 75</STRAS>
+                <ORT01>TALLINN</ORT01>
+                <PSTLZ>12912</PSTLZ>
+                <LAND1>EE</LAND1>
+                <SPRAS>9</SPRAS>
+                <HAUSN>000000</HAUSN>
+                <SPRAS_ISO>ET</SPRAS_ISO>
+            </E1EDPA1>
+            <E1EDP05 SEGMENT="1">
+                <ALCKZ>+</ALCKZ>
+                <KSCHL>ZPR0</KSCHL>
+                <BETRG>182.46</BETRG>
+                <KRATE>60.82</KRATE>
+                <UPRBS>1</UPRBS>
+                <MEAUN>PCE</MEAUN>
+                <KOEIN>EEK</KOEIN>
+                <KOBAS>3</KOBAS>
+            </E1EDP05>
+            <E1EDP05 SEGMENT="1">
+                <ALCKZ>+</ALCKZ>
+                <KSCHL>ZEXD</KSCHL>
+                <BETRG>23.40</BETRG>
+                <KRATE>0</KRATE>
+                <UPRBS>1</UPRBS>
+                <MEAUN>PCE</MEAUN>
+                <KOEIN>EEK</KOEIN>
+                <KOBAS>3</KOBAS>
+            </E1EDP05>
+            <E1EDP05 SEGMENT="1">
+                <ALCKZ>+</ALCKZ>
+                <BETRG>205.86</BETRG>
+                <KRATE>68.62</KRATE>
+                <UPRBS>1</UPRBS>
+                <MEAUN>PCE</MEAUN>
+                <KOEIN>EEK</KOEIN>
+                <KOBAS>3</KOBAS>
+            </E1EDP05>
+            <E1EDP05 SEGMENT="1">
+                <ALCKZ>-</ALCKZ>
+                <KSCHL>ZDI1</KSCHL>
+                <BETRG>10.29</BETRG>
+                <KPERC>5.000-</KPERC>
+            </E1EDP05>
+            <E1EDP05 SEGMENT="1">
+                <ALCKZ>+</ALCKZ>
+                <BETRG>195.57</BETRG>
+                <KRATE>65.19</KRATE>
+                <UPRBS>1</UPRBS>
+                <MEAUN>PCE</MEAUN>
+                <MWSKZ>V1</MWSKZ>
+                <KOEIN>EEK</KOEIN>
+                <KOBAS>3</KOBAS>
+            </E1EDP05>
+            <E1EDP04 SEGMENT="1">
+                <MWSKZ>V1</MWSKZ>
+                <MSATZ>18.000</MSATZ>
+                <MWSBT>35.20</MWSBT>
+            </E1EDP04>
+        </E1EDP01>
+        <E1EDP01 SEGMENT="1">
+            <POSEX>000020</POSEX>
+            <MENGE>4.000</MENGE>
+            <MENEE>PCE</MENEE>
+            <NTGEW>8.088</NTGEW>
+            <GEWEI>KGM</GEWEI>
+            <BRGEW>8.640</BRGEW>
+            <PSTYV>TAN</PSTYV>
+            <WERKS>EP01</WERKS>
+            <E1EDP02 SEGMENT="1">
+                <QUALF>001</QUALF>
+            </E1EDP02>
+            <E1EDP02 SEGMENT="1">
+                <QUALF>002</QUALF>
+                <BELNR>0000000191</BELNR>
+                <ZEILE>000020</ZEILE>
+                <DATUM>20071228</DATUM>
+            </E1EDP02>
+            <E1EDP02 SEGMENT="1">
+                <QUALF>016</QUALF>
+                <BELNR>0080000118</BELNR>
+                <ZEILE>000020</ZEILE>
+                <DATUM>20080102</DATUM>
+            </E1EDP02>
+            <E1EDP03 SEGMENT="1">
+                <IDDAT>029</IDDAT>
+                <DATUM>20071228</DATUM>
+            </E1EDP03>
+            <E1EDP03 SEGMENT="1">
+                <IDDAT>001</IDDAT>
+                <DATUM>20080102</DATUM>
+            </E1EDP03>
+            <E1EDP03 SEGMENT="1">
+                <IDDAT>011</IDDAT>
+                <DATUM>20080104</DATUM>
+            </E1EDP03>
+            <E1EDP03 SEGMENT="1">
+                <IDDAT>025</IDDAT>
+                <DATUM>20071228</DATUM>
+            </E1EDP03>
+            <E1EDP03 SEGMENT="1">
+                <IDDAT>027</IDDAT>
+                <DATUM>20080102</DATUM>
+            </E1EDP03>
+            <E1EDP03 SEGMENT="1">
+                <IDDAT>023</IDDAT>
+                <DATUM>20080102</DATUM>
+            </E1EDP03>
+            <E1EDP19 SEGMENT="1">
+                <QUALF>010</QUALF>
+                <IDTNR>L7214</IDTNR>
+            </E1EDP19>
+            <E1EDP19 SEGMENT="1">
+                <QUALF>002</QUALF>
+                <IDTNR>1001716</IDTNR>
+                <KTEXT>KOSKENKORVA KARPALO 5,5% 6X33CL</KTEXT>
+            </E1EDP19>
+            <E1EDP19 SEGMENT="1">
+                <QUALF>003</QUALF>
+                <IDTNR>6412703013562</IDTNR>
+            </E1EDP19>
+            <E1EDP26 SEGMENT="1">
+                <QUALF>004</QUALF>
+                <BETRG>493.15</BETRG>
+            </E1EDP26>
+            <E1EDP26 SEGMENT="1">
+                <QUALF>003</QUALF>
+                <BETRG>419.75</BETRG>
+            </E1EDP26>
+            <E1EDP26 SEGMENT="1">
+                <QUALF>010</QUALF>
+                <BETRG>355.96</BETRG>
+            </E1EDP26>
+            <E1EDP26 SEGMENT="1">
+                <QUALF>011</QUALF>
+                <BETRG>429.21</BETRG>
+            </E1EDP26>
+            <E1EDP26 SEGMENT="1">
+                <QUALF>012</QUALF>
+                <BETRG>407.75</BETRG>
+            </E1EDP26>
+            <E1EDP26 SEGMENT="1">
+                <QUALF>001</QUALF>
+                <BETRG>88.99</BETRG>
+            </E1EDP26>
+            <E1EDP26 SEGMENT="1">
+                <QUALF>002</QUALF>
+                <BETRG>355.96</BETRG>
+            </E1EDP26>
+            <E1EDPA1 SEGMENT="1">
+                <PARVW>WE</PARVW>
+                <PARTN>6000473</PARTN>
+                <NAME1>Maxima X kauplus T216</NAME1>
+                <STRAS>E.VILDE TEE 75</STRAS>
+                <ORT01>TALLINN</ORT01>
+                <PSTLZ>12912</PSTLZ>
+                <LAND1>EE</LAND1>
+                <SPRAS>9</SPRAS>
+                <HAUSN>000000</HAUSN>
+                <SPRAS_ISO>ET</SPRAS_ISO>
+            </E1EDPA1>
+            <E1EDP05 SEGMENT="1">
+                <ALCKZ>+</ALCKZ>
+                <KSCHL>ZPR0</KSCHL>
+                <BETRG>355.96</BETRG>
+                <KRATE>88.99</KRATE>
+                <UPRBS>1</UPRBS>
+                <MEAUN>PCE</MEAUN>
+                <MWSKZ>V1</MWSKZ>
+                <KOEIN>EEK</KOEIN>
+                <KOBAS>4</KOBAS>
+            </E1EDP05>
+            <E1EDP05 SEGMENT="1">
+                <ALCKZ>+</ALCKZ>
+                <KSCHL>ZEXD</KSCHL>
+                <BETRG>73.25</BETRG>
+                <KRATE>0</KRATE>
+                <UPRBS>1</UPRBS>
+                <MEAUN>PCE</MEAUN>
+                <MWSKZ>V1</MWSKZ>
+                <KOEIN>EEK</KOEIN>
+                <KOBAS>4</KOBAS>
+            </E1EDP05>
+            <E1EDP05 SEGMENT="1">
+                <ALCKZ>+</ALCKZ>
+                <BETRG>429.21</BETRG>
+                <KRATE>107.30</KRATE>
+                <UPRBS>1</UPRBS>
+                <MEAUN>PCE</MEAUN>
+                <MWSKZ>V1</MWSKZ>
+                <KOEIN>EEK</KOEIN>
+                <KOBAS>4</KOBAS>
+            </E1EDP05>
+            <E1EDP05 SEGMENT="1">
+                <ALCKZ>-</ALCKZ>
+                <KSCHL>ZDI1</KSCHL>
+                <BETRG>21.46</BETRG>
+                <KPERC>5.000-</KPERC>
+                <MWSKZ>V1</MWSKZ>
+            </E1EDP05>
+            <E1EDP05 SEGMENT="1">
+                <ALCKZ>+</ALCKZ>
+                <BETRG>407.75</BETRG>
+                <KRATE>101.94</KRATE>
+                <UPRBS>1</UPRBS>
+                <MEAUN>PCE</MEAUN>
+                <MWSKZ>V1</MWSKZ>
+                <KOEIN>EEK</KOEIN>
+                <KOBAS>4</KOBAS>
+            </E1EDP05>
+            <E1EDP05 SEGMENT="1">
+                <ALCKZ>+</ALCKZ>
+                <KSCHL>ZDEP</KSCHL>
+                <BETRG>12.00</BETRG>
+                <KRATE>3.00</KRATE>
+                <UPRBS>1</UPRBS>
+                <MEAUN>PCE</MEAUN>
+                <MWSKZ>V0</MWSKZ>
+                <KOEIN>EEK</KOEIN>
+                <KOBAS>4</KOBAS>
+            </E1EDP05>
+            <E1EDP04 SEGMENT="1">
+                <MWSKZ>V1</MWSKZ>
+                <MSATZ>18.000</MSATZ>
+                <MWSBT>73.40</MWSBT>
+            </E1EDP04>
+            <E1EDP04 SEGMENT="1">
+                <MWSKZ>V0</MWSKZ>
+                <MSATZ>0</MSATZ>
+                <MWSBT>0</MWSBT>
+            </E1EDP04>
+        </E1EDP01>
+        <E1EDS01 SEGMENT="1">
+            <SUMID>001</SUMID>
+            <SUMME>2</SUMME>
+        </E1EDS01>
+        <E1EDS01 SEGMENT="1">
+            <SUMID>012</SUMID>
+            <SUMME>723.92</SUMME>
+            <WAERQ>EEK</WAERQ>
+        </E1EDS01>
+        <E1EDS01 SEGMENT="1">
+            <SUMID>005</SUMID>
+            <SUMME>108.60</SUMME>
+            <WAERQ>EEK</WAERQ>
+        </E1EDS01>
+        <E1EDS01 SEGMENT="1">
+            <SUMID>011</SUMID>
+            <SUMME>723.92</SUMME>
+            <WAERQ>EEK</WAERQ>
+        </E1EDS01>
+        <E1EDS01 SEGMENT="1">
+            <SUMID>010</SUMID>
+            <SUMME>615.32</SUMME>
+            <WAERQ>EEK</WAERQ>
+            <Z1EDS04 SEGMENT="1">
+                <MWSKZ>V1</MWSKZ>
+                <MSATZ>18.000</MSATZ>
+                <BETRG>603.32</BETRG>
+            </Z1EDS04>
+            <Z1EDS04 SEGMENT="1">
+                <MWSKZ>V0</MWSKZ>
+                <MSATZ>0</MSATZ>
+                <BETRG>12.00</BETRG>
+            </Z1EDS04>
+        </E1EDS01>
+    </IDOC>
+</ZTELINVOIC02>

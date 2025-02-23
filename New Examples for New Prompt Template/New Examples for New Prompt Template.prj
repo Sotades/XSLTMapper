@@ -1,0 +1,166 @@
+
+<project type="cont" name="New Examples for New Prompt Template" expanded="yes" catalog="no" pluginOwner="-1">
+	<project type="cont" name="XSLT" expanded="yes" catalog="no" pluginOwner="-1">
+		<file plugId="2" URL="XSLT\INVOIC02 to EDIFACT INVOIC D96A.xsl">
+			<scenarios>
+				<scenario default="yes" name="Scenario1" userelativepaths="yes" externalpreview="no" url="..\XML\IDoc_7176_in.xml" htmlbaseurl="" outputurl="" processortype="saxon8" useresolver="yes" profilemode="0" profiledepth="" profilelength=""
+				          urlprofilexml="" commandline="" additionalpath="" additionalclasspath="" postprocessortype="none" postprocesscommandline="" postprocessadditionalpath="" postprocessgeneratedext="" validateoutput="no" validator="internal"
+				          customvalidator="">
+					<advancedProp name="bSchemaAware" value="true"/>
+					<advancedProp name="xsltVersion" value="2.0"/>
+					<advancedProp name="schemaCache" value="||"/>
+					<advancedProp name="iWhitespace" value="0"/>
+					<advancedProp name="bWarnings" value="true"/>
+					<advancedProp name="bXml11" value="false"/>
+					<advancedProp name="bUseDTD" value="false"/>
+					<advancedProp name="bXsltOneIsOkay" value="true"/>
+					<advancedProp name="bTinyTree" value="true"/>
+					<advancedProp name="bGenerateByteCode" value="true"/>
+					<advancedProp name="bExtensions" value="true"/>
+					<advancedProp name="iValidation" value="0"/>
+					<advancedProp name="iErrorHandling" value="fatal"/>
+					<advancedProp name="sInitialTemplate" value=""/>
+					<advancedProp name="sInitialMode" value=""/>
+				</scenario>
+			</scenarios>
+			<MapperMetaTag>
+				<MapperInfo srcSchemaPathIsRelative="yes" srcSchemaInterpretAsXML="no" destSchemaPath="INVOIC D96A.xsd" destSchemaRoot="EDIFACT" destSchemaPathIsRelative="yes" destSchemaInterpretAsXML="no">
+					<SourceSchema srcSchemaPath="ZTELINVOIC.INVOIC02.ZTELINVOIC02.xsd" srcSchemaRoot="ZTELINVOIC02" AssociatedInstance="" loaderFunction="document" loaderFunctionUsesURI="no"/>
+				</MapperInfo>
+				<MapperBlockPosition>
+					<template match="/"></template>
+					<template name="UNH">
+						<block path="UNH/UNH01-MessageReferenceNumber/xsl:value-of" x="290" y="90"/>
+					</template>
+					<template name="BGM">
+						<block path="BGM/BGM01-DocumentMessageName/BGM0101-DocumentMessageNameCoded/xsl:choose" x="288" y="258"/>
+						<block path="BGM/BGM01-DocumentMessageName/BGM0101-DocumentMessageNameCoded/xsl:choose/=[0]" x="242" y="252"/>
+						<block path="" x="238" y="288"/>
+						<block path="BGM/BGM01-DocumentMessageName/BGM0101-DocumentMessageNameCoded/xsl:choose/=[1]" x="242" y="280"/>
+						<block path="BGM/BGM02-DocumentMessageNumber/xsl:value-of" x="318" y="234"/>
+					</template>
+					<template name="DTM_HEADER"></template>
+					<template match="INVOIC02/IDOC/E1EDK03">
+						<block path="xsl:choose" x="313" y="180"/>
+						<block path="xsl:choose/=[0]" x="267" y="174"/>
+						<block path="xsl:choose/xsl:when/DTM/DTM01-DateTimePeriod/DTM0102-DateTimePeriod/xsl:value-of" x="313" y="234"/>
+						<block path="xsl:choose/=[1]" x="267" y="202"/>
+						<block path="xsl:choose/xsl:when[1]/DTM/DTM01-DateTimePeriod/DTM0102-DateTimePeriod/xsl:value-of" x="313" y="324"/>
+					</template>
+					<template match="INVOIC02/IDOC/E1EDP01">
+						<block path="GROUP_25/xsl:for-each" x="378" y="174"/>
+						<block path="GROUP_25/xsl:for-each/xsl:choose" x="328" y="204"/>
+						<block path="GROUP_25/xsl:for-each/xsl:choose/=[0]" x="282" y="202"/>
+						<block path="GROUP_25/xsl:for-each/xsl:choose/xsl:when/LIN/LIN01-LineItemNumber/xsl:value-of" x="48" y="204"/>
+						<block path="GROUP_25/xsl:for-each/xsl:choose/xsl:when/LIN/LIN03-ItemNumberIdentification/LIN0301-ItemNumber/xsl:value-of" x="328" y="164"/>
+						<block path="GROUP_25/xsl:for-each[1]" x="218" y="174"/>
+						<block path="GROUP_25/xsl:for-each[1]/xsl:choose" x="288" y="204"/>
+						<block path="GROUP_25/xsl:for-each[1]/xsl:choose/=[0]" x="242" y="202"/>
+						<block path="GROUP_25/xsl:for-each[1]/xsl:choose/xsl:when/PIA/PIA02-ItemNumberIdentification/PIA0201-ItemNumber/xsl:value-of" x="288" y="164"/>
+						<block path="GROUP_25/QTY/QTY01-QuantityDetails/QTY0102-Quantity/xsl:value-of" x="168" y="164"/>
+						<block path="GROUP_25/xsl:for-each[2]" x="98" y="174"/>
+						<block path="GROUP_25/xsl:for-each[2]/xsl:choose" x="168" y="204"/>
+						<block path="GROUP_25/xsl:for-each[2]/xsl:choose/=[0]" x="122" y="202"/>
+						<block path="GROUP_25/xsl:for-each[2]/xsl:choose/xsl:when/PRI/PRI01-PriceInformation/PRI0102-Price/xsl:value-of" x="48" y="164"/>
+						<block path="GROUP_25/GROUP_26/MOA/MOA01-MonetaryAmount/MOA0102-MonetaryAmount/xsl:value-of" x="168" y="124"/>
+						<block path="GROUP_25/GROUP_28/PRI/PRI01-PriceInformation/PRI0102-Price/xsl:value-of" x="128" y="124"/>
+						<block path="GROUP_25/GROUP_28/PRI[1]/PRI01-PriceInformation/PRI0102-Price/xsl:value-of" x="88" y="124"/>
+						<block path="GROUP_25/xsl:for-each[3]" x="328" y="164"/>
+						<block path="GROUP_25/xsl:for-each[3]/GROUP_33/TAX/TAX05-DutyTaxFeeDetail/TAX0504-DutyTaxFeeRate/xsl:value-of" x="48" y="124"/>
+						<block path="GROUP_25/xsl:for-each[3]/GROUP_33/MOA/MOA01-MonetaryAmount/MOA0102-MonetaryAmount/xsl:value-of" x="328" y="84"/>
+						<block path="xsl:for-each" x="328" y="204"/>
+						<block path="xsl:for-each/GROUP_25/LIN/LIN01-LineItemNumber/xsl:value-of" x="208" y="164"/>
+						<block path="xsl:for-each/GROUP_25/QTY/QTY01-QuantityDetails/QTY0102-Quantity/xsl:value-of" x="248" y="124"/>
+						<block path="xsl:for-each/GROUP_25/QTY/QTY01-QuantityDetails/QTY0103-MeasureUnitQualifier/xsl:value-of" x="208" y="124"/>
+						<block path="xsl:for-each/GROUP_25/GROUP_26/MOA/MOA01-MonetaryAmount/MOA0102-MonetaryAmount/xsl:value-of" x="368" y="84"/>
+						<block path="xsl:for-each/GROUP_25/GROUP_28/PRI/PRI01-PriceInformation/PRI0102-Price/xsl:value-of" x="288" y="84"/>
+						<block path="xsl:for-each/GROUP_25/GROUP_33/TAX/TAX05-DutyTaxFeeDetail/TAX0504-DutyTaxFeeRate/xsl:value-of" x="248" y="84"/>
+						<block path="xsl:for-each/GROUP_25/GROUP_33/MOA/MOA01-MonetaryAmount/MOA0102-MonetaryAmount/xsl:value-of" x="208" y="84"/>
+					</template>
+					<template match="ZTELINVOIC02/IDOC/E1EDP01">
+						<block path="GROUP_25/xsl:for-each" x="172" y="174"/>
+						<block path="GROUP_25/xsl:for-each/xsl:choose" x="282" y="204"/>
+						<block path="GROUP_25/xsl:for-each/xsl:choose/=[0]" x="236" y="202"/>
+						<block path="GROUP_25/xsl:for-each/xsl:choose/xsl:when/LIN/LIN01-LineItemNumber/xsl:value-of" x="122" y="164"/>
+						<block path="GROUP_25/xsl:for-each/xsl:choose/xsl:when/LIN/LIN03-ItemNumberIdentification/LIN0301-ItemNumber/xsl:value-of" x="282" y="124"/>
+						<block path="GROUP_25/xsl:for-each[1]" x="52" y="174"/>
+						<block path="GROUP_25/xsl:for-each[1]/xsl:choose" x="122" y="204"/>
+						<block path="GROUP_25/xsl:for-each[1]/xsl:choose/=[0]" x="76" y="202"/>
+						<block path="GROUP_25/xsl:for-each[1]/xsl:choose/xsl:when/PIA/PIA02-ItemNumberIdentification/PIA0201-ItemNumber/xsl:value-of" x="202" y="124"/>
+						<block path="GROUP_25/QTY/QTY01-QuantityDetails/QTY0102-Quantity/xsl:value-of" x="162" y="124"/>
+						<block path="GROUP_25/xsl:for-each[2]" x="12" y="174"/>
+						<block path="GROUP_25/xsl:for-each[2]/xsl:choose" x="242" y="164"/>
+						<block path="GROUP_25/xsl:for-each[2]/xsl:choose/=[0]" x="196" y="162"/>
+						<block path="GROUP_25/xsl:for-each[2]/xsl:choose/xsl:when/PRI/PRI01-PriceInformation/PRI0102-Price/xsl:value-of" x="122" y="124"/>
+						<block path="GROUP_25/GROUP_26/MOA/MOA01-MonetaryAmount/MOA0102-MonetaryAmount/xsl:value-of" x="242" y="84"/>
+						<block path="GROUP_25/GROUP_28/PRI/PRI01-PriceInformation/PRI0102-Price/xsl:value-of" x="282" y="84"/>
+						<block path="GROUP_25/GROUP_28/PRI[1]/PRI01-PriceInformation/PRI0102-Price/xsl:value-of" x="202" y="84"/>
+						<block path="GROUP_25/xsl:for-each[3]" x="282" y="164"/>
+						<block path="GROUP_25/xsl:for-each[3]/GROUP_33/TAX/TAX05-DutyTaxFeeDetail/TAX0504-DutyTaxFeeRate/xsl:value-of" x="162" y="84"/>
+						<block path="GROUP_25/xsl:for-each[3]/GROUP_33/MOA/MOA01-MonetaryAmount/MOA0102-MonetaryAmount/xsl:value-of" x="122" y="84"/>
+						<block path="xsl:for-each" x="242" y="204"/>
+						<block path="xsl:for-each/GROUP_25/LIN/LIN01-LineItemNumber/xsl:value-of" x="242" y="124"/>
+						<block path="xsl:for-each/GROUP_25/QTY/QTY01-QuantityDetails/QTY0102-Quantity/xsl:value-of" x="82" y="124"/>
+						<block path="xsl:for-each/GROUP_25/QTY/QTY01-QuantityDetails/QTY0103-MeasureUnitQualifier/xsl:value-of" x="42" y="124"/>
+						<block path="xsl:for-each/GROUP_25/GROUP_26/MOA/MOA01-MonetaryAmount/MOA0102-MonetaryAmount/xsl:value-of" x="82" y="84"/>
+						<block path="xsl:for-each/GROUP_25/GROUP_28/PRI/PRI01-PriceInformation/PRI0102-Price/xsl:value-of" x="42" y="84"/>
+						<block path="xsl:for-each/GROUP_25/GROUP_33/TAX/TAX05-DutyTaxFeeDetail/TAX0504-DutyTaxFeeRate/xsl:value-of" x="242" y="44"/>
+						<block path="xsl:for-each/GROUP_25/GROUP_33/MOA/MOA01-MonetaryAmount/MOA0102-MonetaryAmount/xsl:value-of" x="282" y="44"/>
+					</template>
+					<template match="ZTELINVOIC02/IDOC/E1EDK01">
+						<block path="BGM/BGM01-DocumentMessageName/BGM0101-DocumentMessageNameCoded/xsl:choose" x="292" y="168"/>
+						<block path="BGM/BGM01-DocumentMessageName/BGM0101-DocumentMessageNameCoded/xsl:choose/=[0]" x="246" y="162"/>
+						<block path="" x="202" y="198"/>
+						<block path="BGM/BGM01-DocumentMessageName/BGM0101-DocumentMessageNameCoded/xsl:choose/=[1]" x="246" y="190"/>
+						<block path="BGM/BGM02-DocumentMessageNumber/xsl:value-of" x="242" y="270"/>
+					</template>
+				</MapperBlockPosition>
+				<TemplateContext>
+					<template name="UNH" mode="" srcContextPath="/INVOIC02/IDOC/EDI_DC40" srcContextFile="file:///c:/Documents and Settings/bateman/My Documents/Altia/Interfaces/Telema/I149 INVOIC/INVOIC.INVOIC02.xsd" targetContextPath="/EDIFACT/INVOIC"
+					          targetContextFile="file:///c:/Documents and Settings/bateman/My Documents/Altia/Interfaces/Telema/I149 INVOIC/INVOIC D96A.xsd"/>
+					<template name="BGM" mode="" srcContextPath="/INVOIC02/IDOC/E1EDK03" srcContextFile="file:///c:/Documents and Settings/bateman/My Documents/Altia/Interfaces/Telema/I149 INVOIC/INVOIC.INVOIC02.xsd" targetContextPath="/EDIFACT/INVOIC/BGM"
+					          targetContextFile="file:///c:/Documents and Settings/bateman/My Documents/Altia/Interfaces/Telema/I149 INVOIC/INVOIC D96A.xsd"/>
+					<template name="DTM_HEADER" mode="" srcContextPath="/INVOIC02" srcContextFile="file:///c:/Documents and Settings/bateman/My Documents/Altia/Interfaces/Telema/I149 INVOIC/INVOIC.INVOIC02.xsd" targetContextPath="/EDIFACT"
+					          targetContextFile="file:///c:/Documents and Settings/bateman/My Documents/Altia/Interfaces/Telema/I149 INVOIC/INVOIC D96A.xsd"/>
+				</TemplateContext>
+				<MapperFilter side="target"></MapperFilter>
+			</MapperMetaTag>
+		</file>
+		<file plugId="2" URL="XSLT\Skeleton Example for New Prompt Templat1.xsl">
+			<scenarios>
+				<scenario default="yes" name="Skeleton Example" userelativepaths="yes" externalpreview="no" url="..\XML\IDoc_7176_in.xml" htmlbaseurl="" outputurl="" processortype="saxon8" useresolver="yes" profilemode="0" profiledepth="" profilelength=""
+				          urlprofilexml="" commandline="" additionalpath="" additionalclasspath="" postprocessortype="none" postprocesscommandline="" postprocessadditionalpath="" postprocessgeneratedext="" validateoutput="no" validator="internal"
+				          customvalidator="">
+					<advancedProp name="bSchemaAware" value="true"/>
+					<advancedProp name="xsltVersion" value="2.0"/>
+					<advancedProp name="schemaCache" value="||"/>
+					<advancedProp name="iWhitespace" value="0"/>
+					<advancedProp name="bWarnings" value="true"/>
+					<advancedProp name="bXml11" value="false"/>
+					<advancedProp name="bUseDTD" value="false"/>
+					<advancedProp name="bXsltOneIsOkay" value="true"/>
+					<advancedProp name="bTinyTree" value="true"/>
+					<advancedProp name="bGenerateByteCode" value="true"/>
+					<advancedProp name="bExtensions" value="true"/>
+					<advancedProp name="iValidation" value="0"/>
+					<advancedProp name="iErrorHandling" value="fatal"/>
+					<advancedProp name="sInitialTemplate" value=""/>
+					<advancedProp name="sInitialMode" value=""/>
+				</scenario>
+			</scenarios>
+			<MapperMetaTag>
+				<MapperInfo srcSchemaPathIsRelative="yes" srcSchemaInterpretAsXML="no" destSchemaPath="" destSchemaRoot="" destSchemaPathIsRelative="yes" destSchemaInterpretAsXML="no"/>
+				<MapperBlockPosition></MapperBlockPosition>
+				<TemplateContext></TemplateContext>
+				<MapperFilter side="source"></MapperFilter>
+			</MapperMetaTag>
+		</file>
+	</project>
+	<project type="cont" name="XML" expanded="yes" catalog="no" pluginOwner="-1">
+		<file plugId="3" URL="XML\IDoc_7176_in.xml" catalog="no">
+			<queries/>
+			<namespaces/>
+		</file>
+	</project>
+	<project type="cont" name="XSD" expanded="no" catalog="no" pluginOwner="-1"/>
+</project>

@@ -1,0 +1,41 @@
+
+<project type="cont" name="New Examples for New Prompt Template" expanded="yes" catalog="no" pluginOwner="-1">
+	<project type="cont" name="XSLT" expanded="yes" catalog="no" pluginOwner="-1">
+		<file plugId="2" URL="XSLT\Skeleton Example for New Prompt Templat1.xsl">
+			<scenarios>
+				<scenario default="yes" name="Skeleton Example" userelativepaths="yes" externalpreview="no" url="..\XML\IDoc_7176_in.xml" htmlbaseurl="" outputurl="" processortype="saxon8" useresolver="yes" profilemode="0" profiledepth="" profilelength=""
+				          urlprofilexml="" commandline="" additionalpath="" additionalclasspath="" postprocessortype="none" postprocesscommandline="" postprocessadditionalpath="" postprocessgeneratedext="" validateoutput="no" validator="internal"
+				          customvalidator="">
+					<advancedProp name="bSchemaAware" value="true"/>
+					<advancedProp name="xsltVersion" value="2.0"/>
+					<advancedProp name="schemaCache" value="||"/>
+					<advancedProp name="iWhitespace" value="0"/>
+					<advancedProp name="bWarnings" value="true"/>
+					<advancedProp name="bXml11" value="false"/>
+					<advancedProp name="bUseDTD" value="false"/>
+					<advancedProp name="bXsltOneIsOkay" value="true"/>
+					<advancedProp name="bTinyTree" value="true"/>
+					<advancedProp name="bGenerateByteCode" value="true"/>
+					<advancedProp name="bExtensions" value="true"/>
+					<advancedProp name="iValidation" value="0"/>
+					<advancedProp name="iErrorHandling" value="fatal"/>
+					<advancedProp name="sInitialTemplate" value=""/>
+					<advancedProp name="sInitialMode" value=""/>
+				</scenario>
+			</scenarios>
+			<MapperMetaTag>
+				<MapperInfo srcSchemaPathIsRelative="yes" srcSchemaInterpretAsXML="no" destSchemaPath="" destSchemaRoot="" destSchemaPathIsRelative="yes" destSchemaInterpretAsXML="no"/>
+				<MapperBlockPosition></MapperBlockPosition>
+				<TemplateContext></TemplateContext>
+				<MapperFilter side="source"></MapperFilter>
+			</MapperMetaTag>
+		</file>
+	</project>
+	<project type="cont" name="XML" expanded="yes" catalog="no" pluginOwner="-1">
+		<file plugId="3" URL="XML\IDoc_7176_in.xml" catalog="no">
+			<queries/>
+			<namespaces/>
+		</file>
+	</project>
+	<project type="cont" name="XSD" expanded="no" catalog="no" pluginOwner="-1"/>
+</project>
